@@ -19,9 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.larry.myapplication.page.download.DownloadActivity;
-import com.example.larry.myapplication.page.download.ListFileActivity;
-import com.example.larry.myapplication.page.download.ScrollingActivity;
+
 import com.example.larry.myapplication.utils.ConfigStore;
 import com.example.larry.myapplication.utils.DeviceUuidFactory;
 import com.example.larry.myapplication.utils.LogHelper;
@@ -212,9 +210,9 @@ public class MainActivity extends MyActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent intent = new Intent(getApplicationContext(), ScrollingActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
+//            Intent intent = new Intent(getApplicationContext(), ScrollingActivity.class);
+//            startActivity(intent);
+//            overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {

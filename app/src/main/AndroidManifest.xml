@@ -23,11 +23,6 @@
             android:allowBackup="true"
             android:label="Educater"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".GuideActivity"
@@ -50,15 +45,13 @@
         <service android:name=".media.MusicService" />
 
         <activity
-            android:name=".page.download.DownloadActivity"
-            android:label="@string/title_activity_download"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".page.download.ListFileActivity" />
-        <activity
-            android:name=".page.download.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
+            android:name=".page.downfiles.DownFilesActivity"
+            android:label="@string/title_activity_down_files"
             android:theme="@style/AppTheme">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
     </application>
